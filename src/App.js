@@ -4,6 +4,7 @@ import Menu from "./Component/Menu/Menu";
 import Hotels from "./Component/Hotels/Hotels";
 
 
+
 function App() {
   return (
     <div className="App">

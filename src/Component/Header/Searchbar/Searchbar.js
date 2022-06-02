@@ -1,11 +1,10 @@
 import React from "react";
 
-
 export default function Searchbar() {
   return (
-    <div>
-      <input type="text" placeholder="Search" />
-      <button className="input">Search</button>
+    <div className="d-flex">
+      <input className="form-control" type="text" placeholder="Search" />
+      <button className="btn btn-primary">Search</button>
     </div>
   );
 }
