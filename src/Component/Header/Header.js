@@ -1,7 +1,14 @@
-import React from 'react';
+import React from "react";
+import styles from "./header.module.css";
 
 function Header() {
-  return <h1>Header</h1>;
+  return (
+    <header className={styles.header}>
+      <div>
+        <input type="text" placeholder="Search" />
+      </div>
+    </header>
+  );
 }
 
 export default Header;
