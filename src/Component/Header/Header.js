@@ -3,12 +3,16 @@ import styles from "./header.module.css";
 import Searchbar from "./Searchbar/Searchbar";
 
 
-function Header() {
+export default function Header() {
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} container`}>
       <Searchbar />
     </header>
   );
 }
 
-export default Header;
+
+
+
+
+  
