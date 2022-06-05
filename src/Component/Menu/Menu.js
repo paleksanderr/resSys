@@ -1,9 +1,14 @@
 import React from 'react';
+import styles from './menu.module.css';
 
 export default function Menu() {
   return (
-    <div className="menu">
-      <h2>Menu</h2>
-      </div>
+    <div className={`${styles.menuContainer} container`}>
+      <ul className={styles.menu}>
+        <li className={styles.menuItem}>
+          <a href="#">Home</a>
+        </li>
+      </ul>
+    </div>
   );
 }

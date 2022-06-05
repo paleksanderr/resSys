@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './hotel.module.css'
 
 export default function Hotel(){
   return (
