@@ -10,3 +10,6 @@ export default function Hotel() {
     </div>
   );
 }
+
+
+// WEBPACK FOOTER //
