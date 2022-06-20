@@ -3,13 +3,20 @@ import { Button } from "reactstrap"
 import { useState } from "react";
 
 export default function Searchbar() {
-  const [] = useState(false);
+  const [term, setTerm] = useState(false);
   const search = () => {
-    console.log('szukaj')
+    console.log('szukaj', term)
   }
+  
   return (
     <div className="d-flex">
-      <input className="form-control" type="text" placeholder="Search" />
+      <input 
+      value={term}
+      onKeyDown={(e) => e.key === 'Enter' && search()}  // keydown is fired when user presses a key on the keyboard.
+      onChange={e => setTerm(e.target.value)}
+      className="form-control" 
+      type="text" 
+      placeholder="Search" />
       <button 
       onClick={search}
       style={{marginLeft: "5px"}} 
